@@ -1,0 +1,71 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-text:#111;
+	--color-background:#eee;
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
+@font-face {
+	font-family: 'Newgrounds Font';
+	src: url('NEWGROUNDSFONT-REGULAR.otf');
+}
+
+h1 {
+	font-family: 'Newgrounds Font';
+	text-transform: uppercase;
+}
+
+html {
+	background-color: gray;
+}
+
+body {
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+nav {
+	list-style-type: none;
+	border: solid 1px black;
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+article {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	border: solid 1px black;
+	text-align: center;
+}
+
+section {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	border: solid 1px black;
+	text-align: center;
+}
+
+p {
+	border: solid 1px red;
+}
+
+@media (min-width: 600px) {
+
+}
