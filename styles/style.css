@@ -88,14 +88,26 @@ button:nth-of-type(7) {
 	border-bottom: solid .3em #f1b859;
 }
 
-.three-row {
+section:nth-of-type(1) {
 	display: grid;
+	outline: solid 1px yellow;
 	grid-template-columns: 1fr 1fr 1fr;
 	border: solid .3em white;
 	text-align: center;
 }
 
-.four-row {
+/* you with the selector here below you are saying that you have a second section in your main  */
+/* but you only have one  */
+/* i would recomend to change all your <buttons> in to radio inputs   */
+/* and use the has selector to check if the games input is :checked and then you change the grid */
+
+/* vb */
+button:nth-of-type(1):has(:checked) section:nth-of-type(1){
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+section:nth-of-type(2) {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	border: solid .3em white;
@@ -112,7 +124,3 @@ body#test {
 button#test {
 	background-color: purple;
 }
-
-/* @media (min-width: 600px) {
-
-} */
