@@ -19,17 +19,22 @@
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
-
 @font-face {
 	font-family: 'Newgrounds Font';
 	src: url('NEWGROUNDSFONT-REGULAR.otf');
 }
+
+:focus-visible {
+	border: dashed 5px magenta;
+}
+
+/* geeft achtergrond + font default = wit & arial */
 html {
 	background-color: #22252a;
 	color: white;
 	font-family: Arial, Helvetica, sans-serif;
 }
+/*------------------ */ 
 
 h1 {
 	font-family: 'Newgrounds Font';
@@ -40,87 +45,100 @@ a {
 	all: unset;
 }
 
-main, nav {
-	margin-left: 20%;
-	margin-right: 20%;
+header {
+	display: flex;
+	justify-content: space-between;
+  	justify-items: center;
+  	align-items: center;
+}
+
+header > section > ul {
+	display: flex;
+	justify-content: space-evenly;
+	color: red;
+	list-style-type: none;
+	padding-left: -40px;
 }
 
 nav {
+	/* background-color: black; */
 	list-style-type: none;
 	text-align: center;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  	display: flex;
+  	justify-content: space-evenly;
 }
 
-button {
+nav > button {
 	all: unset;
+	background-color: black;
 	position: relative;
 	cursor: pointer;
 	padding: 1em;
+  	flex: 1 1 1em;
 }
 
-button:nth-of-type(1) {
+main {
+	display: grid;
+	grid-template-rows: auto;
+}
+
+/* borders onder de nav buttons */
+
+nav > button:nth-of-type(1) {
 	border-bottom: solid .3em #f62f36;
 }
 
-button:nth-of-type(2) {
+nav > button:nth-of-type(2) {
 	border-bottom: solid .3em #2684de;
 }
 
-button:nth-of-type(3) {
+nav > button:nth-of-type(3) {
 	border-bottom: solid .3em #47b32a;
 }
 
-button:nth-of-type(4) {
+nav > button:nth-of-type(4) {
 	border-bottom: solid .3em #f136a1;
 }
 
-button:nth-of-type(5) {
+nav > button:nth-of-type(5) {
 	border-bottom: solid .3em #c64be2;
 }
 
-button:nth-of-type(6) {
+nav > button:nth-of-type(6) {
 	border-bottom: solid .3em #ec5216;
 }
 
-button:nth-of-type(7) {
+nav > button:nth-of-type(7) {
 	border-right: none;
 	border-bottom: solid .3em #f1b859;
 }
 
-section:nth-of-type(1) {
+/* ---------------------- */
+
+/* grid met de content */
+
+section:has(div) {
 	display: grid;
-	outline: solid 1px yellow;
 	grid-template-columns: 1fr 1fr 1fr;
-	border: solid .3em white;
 	text-align: center;
 }
 
-/* you with the selector here below you are saying that you have a second section in your main  */
-/* but you only have one  */
-/* i would recomend to change all your <buttons> in to radio inputs   */
-/* and use the has selector to check if the games input is :checked and then you change the grid */
-
-/* vb */
-button:nth-of-type(1):has(:checked) section:nth-of-type(1){
+button:nth-of-type(1):has(:checked) section:nth-of-type(4){
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-
 }
 
-section:nth-of-type(2) {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	border: solid .3em white;
-	text-align: center;
+@media (min-width: 800px) 
+{
+	html {
+		margin-left: 800px;
+		margin-right: 800px;
+	}
 }
 
-body#test {
-	height: 50em;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-button#test {
-	background-color: purple;
+@media (max-width: 1920px)
+{
+	html {
+		margin-left: 25%;
+		margin-right: 25%;
+	}
 }
