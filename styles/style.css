@@ -3,6 +3,8 @@
 /**************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  padding: 0;
+  margin: 0;
 }
 
 
@@ -30,6 +32,7 @@
 
 /* geeft achtergrond + font default = wit & arial */
 html {
+
 	background-color: #22252a;
 	color: white;
 	font-family: Arial, Helvetica, sans-serif;
@@ -45,100 +48,119 @@ a {
 	all: unset;
 }
 
-header {
-	display: flex;
-	justify-content: space-between;
-  	justify-items: center;
-  	align-items: center;
+ul {
+	list-style-type: none;
 }
 
-header > section > ul {
+header {
+	width: 100%;
+	height: auto;
+	outline: solid red 2px;
+	display: flex;
+	flex-direction: column;
+}
+
+/* nav met logo, input field en icons */
+nav:nth-of-type(1) {
+	display: flex;
+	justify-content: space-evenly;
+}
+/* ------------------------------- */
+
+/* nav met pagina's */
+nav:nth-of-type(2) {
+	display: flex;
+	justify-content: space-evenly;
+}
+/* ------------------------------ */
+
+/* background img */
+main > section:first-child {
+	display: block;
+	width: 100%;
+	height: 135vh;
+	background-image: url('//img.ngfiles.com/themes/000/2e63ba301721177992.webp?1721178004');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+span > ul {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/* header > section > ul {
 	display: flex;
 	justify-content: space-evenly;
 	color: red;
 	list-style-type: none;
 	padding-left: -40px;
-}
+} */
 
-nav {
-	/* background-color: black; */
+/* nav {
 	list-style-type: none;
 	text-align: center;
   	display: flex;
   	justify-content: space-evenly;
-}
+} */
 
-nav > button {
+/* nav > a {
 	all: unset;
 	background-color: black;
 	position: relative;
 	cursor: pointer;
 	padding: 1em;
   	flex: 1 1 1em;
+} */
+
+/* borders onder de nav as */
+
+nav:nth-of-type(2){
+
+	a:nth-of-type(1) {
+		border-bottom: solid .3em #f62f36;
+	}
+
+	a:nth-of-type(2) {
+		border-bottom: solid .3em #2684de;
+	}
+
+	a:nth-of-type(3) {
+		border-bottom: solid .3em #47b32a;
+	}
+
+	a:nth-of-type(4) {
+		border-bottom: solid .3em #f136a1;
+	}
+
+	a:nth-of-type(5) {
+		border-bottom: solid .3em #c64be2;
+	}
+
+	a:nth-of-type(6) {
+		border-bottom: solid .3em #ec5216;
+	}
+
+	a:nth-of-type(7) {
+		border-right: none;
+		border-bottom: solid .3em #f1b859;
+	}
+
 }
-
-main {
-	display: grid;
-	grid-template-rows: auto;
-}
-
-/* borders onder de nav buttons */
-
-nav > button:nth-of-type(1) {
-	border-bottom: solid .3em #f62f36;
-}
-
-nav > button:nth-of-type(2) {
-	border-bottom: solid .3em #2684de;
-}
-
-nav > button:nth-of-type(3) {
-	border-bottom: solid .3em #47b32a;
-}
-
-nav > button:nth-of-type(4) {
-	border-bottom: solid .3em #f136a1;
-}
-
-nav > button:nth-of-type(5) {
-	border-bottom: solid .3em #c64be2;
-}
-
-nav > button:nth-of-type(6) {
-	border-bottom: solid .3em #ec5216;
-}
-
-nav > button:nth-of-type(7) {
-	border-right: none;
-	border-bottom: solid .3em #f1b859;
-}
-
 /* ---------------------- */
 
 /* grid met de content */
 
-section:has(div) {
+/* section:has(div + p)  {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	text-align: center;
-}
+	grid-template-columns: repeat(3, minmax(0,1fr));
+	align-self: center;
+	align-items: center;
+	justify-content: center;
 
-button:nth-of-type(1):has(:checked) section:nth-of-type(4){
+} */
+
+/* grid */
+a:nth-of-type(1):has(:checked) section:nth-of-type(4){
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-@media (min-width: 800px) 
-{
-	html {
-		margin-left: 800px;
-		margin-right: 800px;
-	}
-}
-
-@media (max-width: 1920px)
-{
-	html {
-		margin-left: 25%;
-		margin-right: 25%;
-	}
 }
