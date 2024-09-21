@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll("button")
+const links = document.querySelectorAll("a")
 
 function goToGames() {
     window.location.href = "index.html"
@@ -12,5 +12,5 @@ function goToArt() {
 // als de pagina index.html is, doe de eerste grid style en haal de tweede grid style weg
 
 
-buttons[1].addEventListener("click", goToGames)
-buttons[3].addEventListener("click", goToArt)
+links[1].addEventListener("click", goToGames)
+links[3].addEventListener("click", goToArt)
