@@ -21,9 +21,10 @@
 /* JOUW STYLING */
 /****************/
 
+/* general styling */
 @font-face {
-	font-family: 'Newgrounds Font';
-	src: url('NEWGROUNDSFONT-REGULAR.otf');
+	font-family: 'Pakenham';
+	src: url('PAKENHAM-RG.otf')
 }
 
 :focus-visible {
@@ -38,23 +39,22 @@ a {
 	all: unset;
 	flex-grow: 1;
 	text-align: center;
-	padding-block: 0.3em;
+	padding-block: .8em;
 	background-color: black;
 }
 
 h1 {
-	font-family: 'Newgrounds Font';
-	text-transform: uppercase;
+	font-family: 'Pakenham';
+	font-size: 1.3em;
+	font-weight: 300;
 }
 
-/* geeft achtergrond + font default = wit & arial */
 html {
-
 	background-color: #22252a;
 	color: white;
 	font-family: Arial, Helvetica, sans-serif;
 }
-/*------------------ */ 
+/* ------------------------- */
 
 /* header container, includes nav(1) and nav(2) [hieronder]*/
 header {
@@ -69,45 +69,11 @@ header {
 nav:nth-of-type(1), nav:nth-of-type(2), span > ul {
 	display: flex;
 	justify-content: space-between;
+	margin-inline: 20%;
 }
 /* ------------------------------------ */
 
-/* background img */
-
-main > section:first-child {
-	display: block;
-	width: 100%;
-	height: 100vh;
-	background-image: url('//img.ngfiles.com/themes/000/2e63ba301721177992.webp?1721178004');
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: scroll;
-	padding-top: 2%;
-}
-
-/* grid outer part (outer) */
-main > section > article:first-of-type {
-	border: solid 10px purple;
-	width: 60%;
-	height: 50vh;
-	margin-inline: 20%;
-	padding: 1%;
-}
-/* ------------- */
-
-/* grid inner part */
-main > section > article:first-of-type > ul:first-of-type {
-	display: grid;
-	border: solid 10px yellow;
-	grid-template-columns: 1fr 1fr 1fr;
-	width: 100%;
-	height: 5em;
-} 
-/* --------------------- */
-
-/*  */
-
+/* nav bottom border colors */
 nav:nth-of-type(2){
 	a:nth-of-type(1) {
 		border-bottom: solid .3em #f62f36;
@@ -138,4 +104,82 @@ nav:nth-of-type(2){
 		border-bottom: solid .3em #f1b859;
 	}
 }
-/* ---------------------- */
+/* ---------------------------------------- */
+
+/* background img */
+main > section:first-child {
+	display: block;
+	width: 100%;
+	height: 100vh;
+	background-image: url('//img.ngfiles.com/themes/000/2e63ba301721177992.webp?1721178004');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+	padding-top: 2%;
+}
+/* ------------------------- */
+
+/* section:nth-of-type(1) = background-img */
+/* section:nth-of-type(2) = header of grid */
+
+/* grid outer part (outer) */
+main > section:nth-of-type(1) > article:first-of-type {
+	background: #22252A;
+	border-radius: .3em;
+	width: 60%;
+	height: auto;
+	margin-inline: 20%;
+}
+/* ------------- */
+
+/* main header (Browse Games + Browse Art) */
+main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) {
+	display: flex;
+	justify-content: space-between;
+	border-radius: inherit;
+	padding: 0.5em;
+	background-image: linear-gradient(#4D565D, #202427);
+}
+/* --------------------------------- */
+
+/* grid inner part */
+main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) {
+	display: grid;
+	background-color: #111;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	width: 100%;
+	height: auto;
+	padding: 1em;
+	gap: 0.3em;
+} 
+/* --------------------- */
+
+
+/* grid items */
+main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li {
+	/* outline: solid 1px green; */
+	border-radius: 0.4em;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.1);
+	padding: 0.5em;
+}
+/* ------------------------- */
+
+/* maturity indicator */
+main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li > div:nth-of-type(1) {
+	position: absolute;
+	padding-left: 0.8em;
+	padding-top: .3em;
+	text-transform: uppercase;
+}
+/* ----------------------- */
+
+/* clip-path */
+main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li > img {
+	width: 95%;
+	/* height: 100; */
+	clip-path: polygon(0 28px, 1px 26px, 2px 25px, 4px 24px, 18px 24px, 20px 23px, 21px 22px, 22px 20px, 22px 4px, 23px 2px, 24px 1px, 26px 0px, 100% 0, 100% 100%, 0 100%);
+	-webkit-clip-path: polygon(0 28px, 1px 26px, 2px 25px, 4px 24px, 18px 24px, 20px 23px, 21px 22px, 22px 20px, 22px 4px, 23px 2px, 24px 1px, 26px 0px, 100% 0, 100% 100%, 0 100%);
+}
+/* ------------------ */
