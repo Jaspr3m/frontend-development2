@@ -45,8 +45,8 @@ a {
 
 h1 {
 	font-family: 'Pakenham';
-	font-size: 1.3em;
-	font-weight: 300;
+	font-size: 1.8em;
+	font-weight: 600;
 }
 
 html {
@@ -54,7 +54,6 @@ html {
 	color: white;
 	font-family: Arial, Helvetica, sans-serif;
 }
-/* ------------------------- */
 
 /* header container, includes nav(1) and nav(2) [hieronder]*/
 header {
@@ -72,6 +71,11 @@ nav:nth-of-type(1), nav:nth-of-type(2), span > ul {
 	margin-inline: 20%;
 }
 /* ------------------------------------ */
+
+/* nav top icon configuration */
+nav:nth-of-type(1) > span:nth-of-type(3) > ul > li {
+	scale: 2;
+}
 
 /* nav bottom border colors */
 nav:nth-of-type(2){
@@ -147,13 +151,13 @@ main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) 
 main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) {
 	display: grid;
 	background-color: #111;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	width: 100%;
 	height: auto;
 	padding: 1em;
-	gap: 0.3em;
+	gap: 0.5em;
 } 
-/* --------------------- */
+/* --------------------- *
 
 
 /* grid items */
@@ -163,6 +167,11 @@ main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li 
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.1);
 	padding: 0.5em;
+}
+
+/* add animation to hover */
+main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li:hover {
+	background-color: rgba(255, 255, 255, 0.3);
 }
 /* ------------------------- */
 
