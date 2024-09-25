@@ -43,11 +43,30 @@ a {
 	background-color: black;
 }
 
-h1 {
+h2 {
 	font-family: 'Pakenham';
 	font-size: 1.8em;
 	font-weight: 600;
 }
+
+h2::before {
+	/* shrink this somehow */
+    content: "";
+    display: inline-block;
+    width: 4em;
+    height: 4em;
+    background-color: rgba(0,0,0,0.5);
+    vertical-align: middle;
+    margin-left: -3px;
+    margin-top: -2px;
+    margin-right: 5px;
+    background-image: url(//img.ngfiles.com/icons/h2-all-hd.webp?cached=1707337414);
+    background-repeat: no-repeat;
+	background-position: 0px -32.3em;
+    border-radius: 0.15em;
+	object-fit:contain;
+}
+
 
 html {
 	background-color: #22252a;
@@ -71,11 +90,6 @@ nav:nth-of-type(1), nav:nth-of-type(2), span > ul {
 	margin-inline: 20%;
 }
 /* ------------------------------------ */
-
-/* nav top icon configuration */
-nav:nth-of-type(1) > span:nth-of-type(3) > ul > li {
-	scale: 2;
-}
 
 /* nav bottom border colors */
 nav:nth-of-type(2){
@@ -137,7 +151,7 @@ main > section:nth-of-type(1) > article:first-of-type {
 }
 /* ------------- */
 
-/* main header (Browse Games + Browse Art) */
+/* main header (Featured Games + Featured Art) */
 main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) {
 	display: flex;
 	justify-content: space-between;
