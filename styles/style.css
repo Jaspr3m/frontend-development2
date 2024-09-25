@@ -43,7 +43,7 @@ a {
 	background-color: black;
 }
 
-h1 {
+h2 {
 	font-family: 'Pakenham';
 	font-size: 1.8em;
 	font-weight: 600;
@@ -64,6 +64,20 @@ header {
 }
 /* ------------------------------------------------------- */
 
+nav > span:nth-of-type(2) > input {
+	border: none;
+    margin: 0px;
+    padding: 4px 12px;
+    padding-right: 24px;
+    border-radius: 999px;
+    background: rgba(255,255,255,0.2);
+    width: calc(100% - 36px);
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #202427;
+}
+
 /* nav stuff */
 nav:nth-of-type(1), nav:nth-of-type(2), span > ul {
 	display: flex;
@@ -71,11 +85,6 @@ nav:nth-of-type(1), nav:nth-of-type(2), span > ul {
 	margin-inline: 20%;
 }
 /* ------------------------------------ */
-
-/* nav top icon configuration */
-nav:nth-of-type(1) > span:nth-of-type(3) > ul > li {
-	scale: 2;
-}
 
 /* nav bottom border colors */
 nav:nth-of-type(2){
@@ -137,7 +146,7 @@ main > section:nth-of-type(1) > article:first-of-type {
 }
 /* ------------- */
 
-/* main header (Browse Games + Browse Art) */
+/* main header (Featured Games + Featured Art) */
 main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) {
 	display: flex;
 	justify-content: space-between;
@@ -146,6 +155,24 @@ main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) 
 	background-image: linear-gradient(#4D565D, #202427);
 }
 /* --------------------------------- */
+
+main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) > h2::before {
+	/* shrink this somehow */
+	content: "";
+	display: inline-block;
+	width: 4em;
+	height: 4em;
+	background-color: rgba(0,0,0,0.5);
+	vertical-align: middle;
+	margin-left: -3px;
+	margin-top: -2px;
+	margin-right: 5px;
+	background-image: url(//img.ngfiles.com/icons/h2-all-hd.webp?cached=1707337414);
+	background-repeat: no-repeat;
+	background-position: 0px -32.3em;
+	border-radius: 0.15em;
+	object-fit:contain;
+}
 
 /* grid inner part */
 main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) {
@@ -192,3 +219,77 @@ main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li 
 	-webkit-clip-path: polygon(0 28px, 1px 26px, 2px 25px, 4px 24px, 18px 24px, 20px 23px, 21px 22px, 22px 20px, 22px 4px, 23px 2px, 24px 1px, 26px 0px, 100% 0, 100% 100%, 0 100%);
 }
 /* ------------------ */
+
+/* FEATURED CONTENT */
+main > section:nth-of-type(2) {
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 3em;
+	padding-inline: 18em;
+}
+
+main > section:nth-of-type(2) > h2 {
+	text-transform: uppercase;
+	color: #83949D;
+	font-weight: 700;
+	font-size: 2.5em;
+}
+
+main > section:nth-of-type(2) > h2::before {
+	content: 'featured';
+	font-weight: 400;
+	color: white;
+}
+
+main > section:nth-of-type(2) > ul {
+	display: block;
+	float: right;
+
+}
+
+main > section:nth-of-type(2) > ul > button {
+	width: 122px;
+    padding: 0px 6px;
+    margin: 0px;
+    line-height: 30px;
+    height: 30px;
+    text-align: left;
+    border: 1px solid #000;
+    border-top-color: rgba(255,255,255,0.5);
+    border-left-color: rgba(255,255,255,0.5);
+    font-size: 16px;
+    font-weight: normal;
+    font-family: "headerfont","Pakenham","Arial Narrow",Tahoma,Verdana,Geneva,Arial,Helvetica,sans-serif;
+    color: #fff;
+    background-color: #353334;
+    background: -moz-linear-gradient(top, #595554 0%,#595554 35%,#353334 65%,#353334 100%);
+    background: -webkit-linear-gradient(top, #595554 0%,#595554 35%,#353334 65%,#353334 100%);
+    background: linear-gradient(to bottom, #595554 0%,#595554 35%,#353334 65%,#353334 100%);
+}
+
+main > section:nth-of-type(2) > ul > button::after {
+	content: "";
+    display: inline-block;
+    float: right;
+    width: 6px;
+    height: 6px;
+    background-color: #000;
+    border-radius: 5px;
+    margin-top: 11px;
+    border: 1px solid rgba(0,0,0,0.8);
+}
+
+/* FOOTER */
+footer {
+	display: flex;
+	justify-content: space-evenly;
+	width: inherit;
+	padding-inline: 16em;
+	margin-bottom: 3em;
+}
+
+/* 
+	background-image: url("//img.ngfiles.com/bg-footer/footer-skyline.webp?cached=1707337411");
+	background-repeat: no-repeat;
+	background-size: cover;
+*/
