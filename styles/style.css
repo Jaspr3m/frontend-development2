@@ -204,10 +204,14 @@ main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li:
 
 /* maturity indicator */
 main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li > div:nth-of-type(1) {
-	position: absolute;
-	padding-left: 0.8em;
-	padding-top: .3em;
-	text-transform: uppercase;
+	display: inline;
+}
+
+main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li > div:nth-of-type(1) > img {
+	width: 0.9em;
+    height: auto;
+    position: absolute;
+    text-transform: uppercase;
 }
 /* ----------------------- */
 
