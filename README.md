@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Jasprem Singh   
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Blauw 
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Responsive
  
 </details>
 
@@ -36,16 +36,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  Newgrounds
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images\games.png" width="375px" alt="Games section van Newgrounds. Hier zie je alle speelbare games die Newgrounds aan te bieden heeft.">
+
 
   #### Screenshot(s) van de tweede pagina (small screen):
   hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
- 
+  <img src="readme-images\games.png" width="375px" alt="community section van Newgrounds. Hier krijg je de laatste betaalde supporters, Newgrounds Live, laatste nieuws van artiesten, mensen die achievements hebben behaald, mensen die werk aanbieden, en Forum posts te zien.">
+
+
 </details>
 
 
@@ -56,8 +58,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  - Schiphol had ALLES van de WCAG checklist goed; ik kon niks vinden waaruit bleek dat er iets ontbrak vanuit Schiphol's website.
+  - Van instagram threads... (thuis checken)
 
+  
 </details>
 
 
@@ -65,7 +69,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Breakdownschets (week 1)
 
 <details>
-  <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
+  <summary>
+  Ik heb mijn breakdown-schets digitaal gemaakt via Figma.
+  Ik vond dat een handigere alternatief tot pen en papier; hiermee kon ik al automatisch vormen gebruiken om verder te komen.
+  <!-- ADD PICTURES -->
+  </summary>
 
   ### de hele pagina: 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
@@ -88,8 +96,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  <!-- hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code) -->
+  Ik kwam niet heel ver met mijn website; het beste dat ik klaar kon krijgen was een nav die niet zoals gevraagd ging resizen
+  en een grid waarvan de content alleen Nummers waren binnen de container.
+  Naar mijn gevoel zit ik heel ver achter met mijn website.
+  Ik heb weinig aan Javascript geschreven; ik heb alleen functies geschreven waarmee je van pagina kan wisselen.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -104,10 +115,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Punt 1: CSS code is direct en to the point waar nodig; er wordt meteen uitgelegd wat mijn code doet boven bijna elke regel. Daarmee vooral doorgaan met de comments.
+  - Punt 2: Tweede pagina ziet er teveel uit zoals de eerste pagina, dus die moet worden geswitcht.
+
+  - Advies: Opnieuw beginnen en een andere aanpak nemen met de opbouw van de website.
+  Het werd aangeraden om alvast de HTML op te schrijven die je ziet van de website.
 
 </details>
 
@@ -121,7 +133,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Kleine toepassingen gemaakt. Grid heeft nu dummy content erin om te werkelijke grootte van de items te kunnen laten zien.
+  Voor de rest niet heel veel andere dingen.
 
 
   ### Agenda voor meeting
@@ -136,12 +149,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
-
+<!-- work on it at home -->
+- Punt 1: Grid laat duidelijker zien hoe alles eruit zou kunnen zien.
+- Punt 2: Meer werk nodig met flexbox en display elements.
 </details>
 
 
@@ -149,7 +159,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 ## Toegankelijkheidstest 2/2 (week 4)
-
+<!-- work on it at home -->
 <details>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
@@ -168,8 +178,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Ik ben opnieuw begonnen met het schrijven van mijn website. Op een gegeven moment had ik wel mijn code goed af
+  maar ik had geen overzicht meer in mijn code, dus had ik besloten om met een schone lei te beginnen, zodat ik beter overzicht kan behouden.
+  Ik heb een groot deel van de eerste pagina al af, maar niet de tweede pagina.
+  Ik heb de nav, en de footer beter kunnen uitwerken van de website.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -184,10 +196,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Punt 1: Website ziet veel verbetering, er is overduidelijk meer CSS gebruikt.
+  - Punt 2: Javascript is nog steeds wat mager, dat komt vast later wel goed.
+  - Punt 3: Tweede pagina is er nog niet.
+  - Punt 4: ???
 
 </details>
 
