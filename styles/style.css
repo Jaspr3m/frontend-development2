@@ -40,8 +40,19 @@ html {
 
 h2, h3 {
 	font-family: 'Pakenham';
+	font-weight: 400;
+}
+
+h2 {
 	font-size: 1.8em;
-	font-weight: 600;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+h4 {
+	color: #c9bebe;
 }
 
 ul {
@@ -61,21 +72,23 @@ header > nav:nth-of-type(1) {
     align-items: center;
     position: relative;
     /* width: 75%; */
-    padding: 10%;
+    padding: 20%;
     margin: auto;
     height: 100%;
     padding-block: 0.5em;
-}
+} 
 
-/* input field section*/
-header > nav:nth-of-type(1) > span:nth-of-type(2) {
-	padding-inline: 1em;
+/* newgrounds logo */
+header > nav:nth-of-type(1) > span:nth-of-type(1) {
+	cursor: pointer;
 }
 
 /* input field input */
 header > nav:nth-of-type(1) > span:nth-of-type(2) > input {
     border: none;
     border-radius: 1em;
+	padding-inline: 10em;
+	padding-block: 0.25em;
     background: gray;
 	box-shadow: none;
     -moz-box-shadow: none;
@@ -83,9 +96,19 @@ header > nav:nth-of-type(1) > span:nth-of-type(2) > input {
     color: #202427;
 }
 
+header > nav:nth-of-type(1) > span:nth-of-type(2) > input::placeholder {
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: bold;
+}
+
 /* top-right icons */
 header > nav:nth-of-type(1) > span:nth-of-type(3) > ul {
 	display: flex;
+	gap: 2.5em;
+
+	li {
+		cursor: pointer;
+	}
 }
 
 /* BOTTOM NAV */
@@ -96,7 +119,7 @@ header > nav:nth-of-type(2) {
 }
 
 header > nav:nth-of-type(2) > span {
-	margin-inline: 10%;
+	margin-inline: 20%;
 	list-style-type: none;
 	text-align: center;
   	display: flex;
@@ -108,6 +131,7 @@ header > nav:nth-of-type(2) > span > a {
 	padding: .8em;
 	flex-grow: 1;
 	flex: 1 1 0px;
+	cursor: pointer;
 }
 
 header > nav:nth-of-type(2) > span > a:nth-of-type(1) {
@@ -168,32 +192,64 @@ main > section:nth-of-type(1) > article:first-of-type {
 
 /* main header (Featured Games + Featured Art) */
 main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) {
-	display: flex;
-	justify-content: space-between;
-	border-radius: inherit;
-	padding: 0.5em;
-	background-image: linear-gradient(#4D565D, #202427);
+    display: flex;
+    justify-content: flex-start;
+    border-radius: inherit;
+    padding: 0.5em;
+    background-image: linear-gradient(#4D565D, #202427);
+    flex-wrap: wrap;
+    align-items: center;
 }
 /* --------------------------------- */
 
-main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) > h2::before {
-	/* shrink this somehow */
-	content: "";
-	display: inline-block;
-	width: 4em;
-	height: 4em;
+/* Featured games icon styling */
+main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: rgba(0,0,0,0.5);
+	width: 2.5em;
+	height: 2.5em;
 	vertical-align: middle;
-	margin-left: -3px;
-	margin-top: -2px;
-	margin-right: 5px;
-	background-image: url(//img.ngfiles.com/icons/h2-all-hd.webp?cached=1707337414);
+	border-radius: 0.3em;
+	margin-right: 0.5em;
+}	
+
+/* Featured games icon that goes inside of the div */
+main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) > div > img {
+	width: 2em;
+	height: 2em;
 	background-repeat: no-repeat;
 	background-position: 0px -32.3em;
 	border-radius: 0.15em;
-	object-fit:contain;
+	object-fit: contain;
 }
 
+/* Game Dev Forum button */
+main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) > button {
+    padding: 0.8em;
+	text-align: center;
+    border-radius: 0.4em;
+    border: 0;
+    font-weight: bold;
+	background-color: rgba(0,0,0,0.5);
+    color: #fda238;
+	cursor: pointer;
+}
+
+/* Hovering over Game Dev Forum button */
+main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) > button:hover {
+	background-color: #fda238;
+	color: rgba(0,0,0,0.5);
+    font-weight: 700;
+}
+
+/* Featured Games header */
+main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) > h2 {
+	flex-grow: 1;
+	text-align: left;
+}
+	
 /* grid inner part */
 main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) {
 	display: grid;
@@ -213,6 +269,7 @@ main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li 
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.1);
 	padding: 0.5em;
+	cursor: pointer;
 
 	h3 {
 		font-family: Arial, Helvetica, sans-serif;
@@ -238,10 +295,9 @@ main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li 
 }
 
 main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li > div:nth-of-type(1) > img {
-	width: 0.9em;
+	width: 1.2em;
     height: auto;
     position: absolute;
-    text-transform: uppercase;
 }
 /* ----------------------- */
 
@@ -284,6 +340,7 @@ main > section:nth-of-type(2) > h3::before {
 
 /* FEATURED CONTENT buttons */
 main > section:nth-of-type(2) > ul > button {
+	cursor: pointer;
 	width: 7em;
     padding: 0 0.3em;
     margin: auto;
@@ -314,6 +371,30 @@ main > section:nth-of-type(2) > ul > button::after {
     border: 1px solid rgba(0,0,0,0.8);
 }
 
+main > section:nth-of-type(2) > ul > button:nth-of-type(1)::after {
+	background-color: #2684de;
+}
+
+main > section:nth-of-type(2) > ul > button:nth-of-type(2)::after {
+	background-color: #f62f36;
+}
+
+main > section:nth-of-type(2) > ul > button:nth-of-type(3)::after {
+	background-color: #47b32a;
+}
+
+main > section:nth-of-type(2) > ul > button:nth-of-type(4)::after {
+	background-color: #f136a1;
+}
+
+main > section:nth-of-type(2) > ul > button:nth-of-type(5)::after {
+	background-color: #c64be2;
+}
+
+main > section:nth-of-type(2) > ul > button:nth-of-type(6)::after {
+	background-color: #fad4c5;
+}
+
 /* FOOTER */
 
 footer {
@@ -339,3 +420,37 @@ footer > section > span > section > ul > li > a {
 	font-size: small;
 }
 
+footer > section > span > section > ul > li > a:hover {
+	color: white;
+}
+
+
+footer > section > div {
+	background-image: url("//img.ngfiles.com/bg-footer/footer-skyline.webp?cached=1707337411");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 8em;
+}
+
+/* NEXT PAGE --> Community*/
+
+/* [class="community"] {
+	main > section:nth-of-type(1) > article {
+		BLABLABLA CODE
+	}
+} */
+
+/* MAIN GRID | main > background-img > main content (grid) */
+.community main > section:nth-of-type(1) > section:nth-of-type(1) {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1fr;
+	gap: 1em;
+	padding-inline: 20%;
+}
+
+/* GRID ITEMS | */
+.community main > section:nth-of-type(1) > section:nth-of-type(1) > section {
+	background-color: red;
+	height: 3em;
+}
