@@ -1,12 +1,12 @@
 const links = document.querySelectorAll("a")
 
 function goToGames() {
-    window.location.href = "index.html"
+    window.location.href = "games.html"
 }
 
-function goToArt() {
-    window.location.href = "art.html"
+function gotoCommunity() {
+    window.location.href = "community.html"
 }
 
 links[1].addEventListener("click", goToGames)
-links[3].addEventListener("click", goToArt)
+links[5].addEventListener("click", gotoCommunity)

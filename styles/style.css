@@ -22,114 +22,158 @@
 /****************/
 
 /* general styling */
+
 @font-face {
 	font-family: 'Pakenham';
 	src: url('PAKENHAM-RG.otf')
+}
+
+html {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #202427;
 }
 
 :focus-visible {
 	border: dashed 5px magenta;
 }
 
+h2, h3 {
+	font-family: 'Pakenham';
+	font-weight: 400;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+h4 {
+	color: #c9bebe;
+}
+
 ul {
 	list-style-type: none;
 }
 
-a {
-	all: unset;
-	flex-grow: 1;
-	text-align: center;
-	padding-block: .8em;
-	background-color: black;
+/* STARTING OVER */
+
+/* HEADER */
+
+/* TOP NAV */
+header > nav:nth-of-type(1) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    position: relative;
+    /* width: 75%; */
+    padding: 20%;
+    margin: auto;
+    height: 100%;
+    padding-block: 0.5em;
+} 
+
+/* newgrounds logo */
+header > nav:nth-of-type(1) > span:nth-of-type(1) {
+	cursor: pointer;
 }
 
-h2 {
-	font-family: 'Pakenham';
-	font-size: 1.8em;
-	font-weight: 600;
-}
-
-html {
-	background-color: #22252a;
-	color: white;
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-/* header container, includes nav(1) and nav(2) [hieronder]*/
-header {
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-}
-/* ------------------------------------------------------- */
-
-nav > span:nth-of-type(2) > input {
-	border: none;
-    margin: 0px;
-    padding: 4px 12px;
-    padding-right: 24px;
-    border-radius: 999px;
-    background: rgba(255,255,255,0.2);
-    width: calc(100% - 36px);
+/* input field input */
+header > nav:nth-of-type(1) > span:nth-of-type(2) > input {
+    border: none;
+    border-radius: 1em;
+	padding-inline: 10em;
+	padding-block: 0.25em;
+    background: gray;
+	box-shadow: none;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
-    box-shadow: none;
     color: #202427;
 }
 
-/* nav stuff */
-nav:nth-of-type(1), nav:nth-of-type(2), span > ul {
+header > nav:nth-of-type(1) > span:nth-of-type(2) > input::placeholder {
+	color: rgba(0, 0, 0, 0.8);
+	font-weight: bold;
+}
+
+/* top-right icons */
+header > nav:nth-of-type(1) > span:nth-of-type(3) > ul {
 	display: flex;
-	justify-content: space-between;
+	gap: 2.5em;
+
+	li {
+		cursor: pointer;
+	}
+}
+
+/* BOTTOM NAV */
+
+header > nav:nth-of-type(2) {
+	background-color: black;
+	color: white;
+}
+
+header > nav:nth-of-type(2) > span {
 	margin-inline: 20%;
+	list-style-type: none;
+	text-align: center;
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: space-evenly;
 }
-/* ------------------------------------ */
 
-/* nav bottom border colors */
-nav:nth-of-type(2){
-	a:nth-of-type(1) {
-		border-bottom: solid .3em #f62f36;
-	}
-
-	a:nth-of-type(2) {
-		border-bottom: solid .3em #2684de;
-	}
-
-	a:nth-of-type(3) {
-		border-bottom: solid .3em #47b32a;
-	}
-
-	a:nth-of-type(4) {
-		border-bottom: solid .3em #f136a1;
-	}
-
-	a:nth-of-type(5) {
-		border-bottom: solid .3em #c64be2;
-	}
-
-	a:nth-of-type(6) {
-		border-bottom: solid .3em #ec5216;
-	}
-
-	a:nth-of-type(7) {
-		border-right: none;
-		border-bottom: solid .3em #f1b859;
-	}
+header > nav:nth-of-type(2) > span > a {
+	padding: .8em;
+	flex-grow: 1;
+	flex: 1 1 0px;
+	cursor: pointer;
 }
-/* ---------------------------------------- */
+
+header > nav:nth-of-type(2) > span > a:nth-of-type(1) {
+	border-bottom: solid .3em #f62f36;
+}
+
+header > nav:nth-of-type(2) > span > a:nth-of-type(2) {
+	border-bottom: solid .3em #2684de;
+}
+
+header > nav:nth-of-type(2) > span > a:nth-of-type(3) {
+	border-bottom: solid .3em #47b32a;
+}
+
+header > nav:nth-of-type(2) > span > a:nth-of-type(4) {
+	border-bottom: solid .3em #f136a1;
+}
+
+header > nav:nth-of-type(2) > span > a:nth-of-type(5) {
+	border-bottom: solid .3em #c64be2;
+}
+
+header > nav:nth-of-type(2) > span > a:nth-of-type(6) {
+	border-bottom: solid .3em #ec5216;
+}
+
+header > nav:nth-of-type(2) > span > a:nth-of-type(7) {
+	border-right: none;
+	border-bottom: solid .3em #f1b859;
+}
 
 /* background img */
-main > section:first-child {
+main > section:nth-of-type(1) {
 	display: block;
 	width: 100%;
-	height: 100vh;
 	background-image: url('//img.ngfiles.com/themes/000/2e63ba301721177992.webp?1721178004');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: scroll;
-	padding-top: 2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
 }
 /* ------------------------- */
 
@@ -148,32 +192,64 @@ main > section:nth-of-type(1) > article:first-of-type {
 
 /* main header (Featured Games + Featured Art) */
 main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) {
-	display: flex;
-	justify-content: space-between;
-	border-radius: inherit;
-	padding: 0.5em;
-	background-image: linear-gradient(#4D565D, #202427);
+    display: flex;
+    justify-content: flex-start;
+    border-radius: inherit;
+    padding: 0.5em;
+    background-image: linear-gradient(#4D565D, #202427);
+    flex-wrap: wrap;
+    align-items: center;
 }
 /* --------------------------------- */
 
-main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) > h2::before {
-	/* shrink this somehow */
-	content: "";
-	display: inline-block;
-	width: 4em;
-	height: 4em;
+/* Featured games icon styling */
+main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: rgba(0,0,0,0.5);
+	width: 2.5em;
+	height: 2.5em;
 	vertical-align: middle;
-	margin-left: -3px;
-	margin-top: -2px;
-	margin-right: 5px;
-	background-image: url(//img.ngfiles.com/icons/h2-all-hd.webp?cached=1707337414);
+	border-radius: 0.3em;
+	margin-right: 0.5em;
+}	
+
+/* Featured games icon that goes inside of the div */
+main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) > div > img {
+	width: 2em;
+	height: 2em;
 	background-repeat: no-repeat;
 	background-position: 0px -32.3em;
 	border-radius: 0.15em;
-	object-fit:contain;
+	object-fit: contain;
 }
 
+/* Game Dev Forum button */
+main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) > button {
+    padding: 0.8em;
+	text-align: center;
+    border-radius: 0.4em;
+    border: 0;
+    font-weight: bold;
+	background-color: rgba(0,0,0,0.5);
+    color: #fda238;
+	cursor: pointer;
+}
+
+/* Hovering over Game Dev Forum button */
+main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) > button:hover {
+	background-color: #fda238;
+	color: rgba(0,0,0,0.5);
+    font-weight: 700;
+}
+
+/* Featured Games header */
+main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) > h2 {
+	flex-grow: 1;
+	text-align: left;
+}
+	
 /* grid inner part */
 main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) {
 	display: grid;
@@ -189,11 +265,21 @@ main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) {
 
 /* grid items */
 main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li {
-	/* outline: solid 1px green; */
 	border-radius: 0.4em;
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.1);
 	padding: 0.5em;
+	cursor: pointer;
+
+	h3 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: medium;
+	}
+
+	p {
+		font-size: smaller;
+		color: #c9bebe;
+	}
 }
 
 /* add animation to hover */
@@ -202,16 +288,16 @@ main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li:
 }
 /* ------------------------- */
 
+
 /* maturity indicator */
 main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li > div:nth-of-type(1) {
 	display: inline;
 }
 
 main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li > div:nth-of-type(1) > img {
-	width: 0.9em;
+	width: 1.2em;
     height: auto;
     position: absolute;
-    text-transform: uppercase;
 }
 /* ----------------------- */
 
@@ -227,41 +313,44 @@ main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li 
 /* FEATURED CONTENT */
 main > section:nth-of-type(2) {
 	display: flex;
-	justify-content: space-evenly;
-	margin-bottom: 3em;
-	padding-inline: 18em;
+	padding-inline: 10%;
+	padding-block: 0.2em;
+	justify-content: space-around;
+	align-items: center;
+	border-top: solid 0.2em black; 
+	border-bottom: solid 0.2em black; 
+	background-color: rgba(0,0,0,0.3);
 }
 
-main > section:nth-of-type(2) > h2 {
+/* CONTENT */
+main > section:nth-of-type(2) > h3 {
 	text-transform: uppercase;
+	text-align: center;
 	color: #83949D;
 	font-weight: 700;
-	font-size: 2.5em;
+	font-size: 1.5em;
 }
 
-main > section:nth-of-type(2) > h2::before {
+/* FEATURED */
+main > section:nth-of-type(2) > h3::before {
 	content: 'featured';
 	font-weight: 400;
 	color: white;
 }
 
-main > section:nth-of-type(2) > ul {
-	display: block;
-	float: right;
-
-}
-
+/* FEATURED CONTENT buttons */
 main > section:nth-of-type(2) > ul > button {
-	width: 122px;
-    padding: 0px 6px;
-    margin: 0px;
-    line-height: 30px;
-    height: 30px;
+	cursor: pointer;
+	width: 7em;
+    padding: 0 0.3em;
+    margin: auto;
+    line-height: 2em;
+    height: 2em;
     text-align: left;
-    border: 1px solid #000;
+	border: 0.1em solid #000;
     border-top-color: rgba(255,255,255,0.5);
     border-left-color: rgba(255,255,255,0.5);
-    font-size: 16px;
+	font-size: 1em;
     font-weight: normal;
     font-family: "headerfont","Pakenham","Arial Narrow",Tahoma,Verdana,Geneva,Arial,Helvetica,sans-serif;
     color: #fff;
@@ -273,35 +362,95 @@ main > section:nth-of-type(2) > ul > button {
 
 main > section:nth-of-type(2) > ul > button::after {
 	content: "";
-    display: inline-block;
     float: right;
     width: 6px;
     height: 6px;
     background-color: #000;
     border-radius: 5px;
-    margin-top: 11px;
+    margin-top: 0.8em;
     border: 1px solid rgba(0,0,0,0.8);
 }
 
-/* FOOTER */
-footer {
-	display: flex;
-	justify-content: space-evenly;
-	width: inherit;
-	padding-inline: 16em;
-	margin-bottom: 3em;
+main > section:nth-of-type(2) > ul > button:nth-of-type(1)::after {
+	background-color: #2684de;
 }
 
-/* 
+main > section:nth-of-type(2) > ul > button:nth-of-type(2)::after {
+	background-color: #f62f36;
+}
+
+main > section:nth-of-type(2) > ul > button:nth-of-type(3)::after {
+	background-color: #47b32a;
+}
+
+main > section:nth-of-type(2) > ul > button:nth-of-type(4)::after {
+	background-color: #f136a1;
+}
+
+main > section:nth-of-type(2) > ul > button:nth-of-type(5)::after {
+	background-color: #c64be2;
+}
+
+main > section:nth-of-type(2) > ul > button:nth-of-type(6)::after {
+	background-color: #fad4c5;
+}
+
+/* FOOTER */
+
+footer {
+	background-image: linear-gradient(#312E45, #554C53);
+	width: auto;
+	height: auto;
+}
+
+footer > section {
+	padding-block: 1em;
+}
+
+footer > section > span {
+	display: flex;
+	justify-content: space-evenly;
+    flex-direction: row;
+	padding-inline: 10%;
+}
+
+footer > section > span > section > ul > li > a {
+	color: #fda238;
+	text-decoration: none;
+	font-size: small;
+}
+
+footer > section > span > section > ul > li > a:hover {
+	color: white;
+}
+
+
+footer > section > div {
 	background-image: url("//img.ngfiles.com/bg-footer/footer-skyline.webp?cached=1707337411");
-	background-repeat: no-repeat;
-	background-size: cover;
-*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 8em;
+}
 
-[class="detail"] {
-	section:nth-of-type {
-		background-color: deeppink;
+/* NEXT PAGE --> Community*/
+
+/* [class="community"] {
+	main > section:nth-of-type(1) > article {
+		BLABLABLA CODE
 	}
+} */
 
-	
+/* MAIN GRID | main > background-img > main content (grid) */
+.community main > section:nth-of-type(1) > section:nth-of-type(1) {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1fr;
+	gap: 1em;
+	padding-inline: 20%;
+}
+
+/* GRID ITEMS | */
+.community main > section:nth-of-type(1) > section:nth-of-type(1) > section {
+	background-color: red;
+	height: 3em;
 }
