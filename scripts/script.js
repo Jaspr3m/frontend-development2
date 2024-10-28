@@ -10,3 +10,8 @@ function gotoCommunity() {
 
 links[1].addEventListener("click", goToGames)
 links[5].addEventListener("click", gotoCommunity)
+
+// queryselecotr
+// classlistTOggle
+// onclick bijvoorbeeld
+
