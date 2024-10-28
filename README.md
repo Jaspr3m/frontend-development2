@@ -39,12 +39,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Newgrounds
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Newgrounds Games 
   <img src="readme-images\games.png" width="375px" alt="Games section van Newgrounds. Hier zie je alle speelbare games die Newgrounds aan te bieden heeft.">
 
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Newgrounds Community  
   <img src="readme-images\games.png" width="375px" alt="community section van Newgrounds. Hier krijg je de laatste betaalde supporters, Newgrounds Live, laatste nieuws van artiesten, mensen die achievements hebben behaald, mensen die werk aanbieden, en Forum posts te zien.">
 
 
@@ -60,8 +60,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Bevindingen
   - Schiphol had ALLES van de WCAG checklist goed; ik kon niks vinden waaruit bleek dat er iets ontbrak vanuit Schiphol's website.
   - Van instagram threads... (thuis checken)
-
-  
 </details>
 
 
@@ -72,7 +70,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>
   Ik heb mijn breakdown-schets digitaal gemaakt via Figma.
   Ik vond dat een handigere alternatief tot pen en papier; hiermee kon ik al automatisch vormen gebruiken om verder te komen.
-  <!-- ADD PICTURES -->
   </summary>
 
   ### de hele pagina: 
@@ -105,7 +102,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Michelle       | Keira              | Mitchell     | Yade             |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
@@ -140,12 +137,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Michelle       | Keira              | Mitchell     | Yade             |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
-
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
@@ -186,7 +182,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Michelle       | Keira              | Mitchell     | Yade             |
   | ---            | ---                | ---          | ---              |
   | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
