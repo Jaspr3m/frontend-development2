@@ -20,7 +20,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Je focus:
   Vormgeving
- 
+
 </details>
 
 ## Je website
@@ -29,7 +29,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  Newgrounds
+  Mijn opdracht voor dit vak is om de website van Newgrounds te verbeteren
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Newgrounds Games <br>
@@ -37,30 +37,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <br>
   Dit is de Games pagina van Newgrounds. Hier zie je alle speelbare games die Newgrounds aan te bieden heeft.
 
-
   #### Screenshot(s) van de tweede pagina (small screen):
   Newgrounds Community <br>
   <img src="readme-images\games.png" width="375px" alt="community section van Newgrounds. Hier krijg je de laatste betaalde supporters, Newgrounds Live, laatste nieuws van artiesten, mensen die achievements hebben behaald, mensen die werk aanbieden, en Forum posts te zien.">
-
 </details>
-
-
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
-<details>
+<details open>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
   - Schiphol had ALLES van de WCAG checklist goed; ik kon niks vinden waaruit bleek dat er iets ontbrak vanuit Schiphol's website.
-  - Van instagram threads... (thuis checken)
+  - Doordat Instagram Threads een hele minimale website is ten opzichte van bijvoorbeeld twitter, kon je snel door de WCAG checklist heen. (thuis checken)
 </details>
-
-
 
 ## Breakdownschets (week 1)
 
-<details>
+<details open>
   <summary>
   Ik heb mijn breakdown-schets digitaal gemaakt via Figma.
   Ik vond dat een handigere alternatief tot pen en papier; hiermee kon ik al automatisch vormen gebruiken om verder te komen.
@@ -80,10 +74,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-
 ## Voortgang 1 (week 2)
 
-<details>
+<details open>
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -120,7 +113,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 2 (week 3)
 
-<details>
+<details open>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -133,7 +126,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | Michelle       | Keira              | Mitchell     | Yade             |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | hulp aanbieden| elkaars website bekijken| vragen stellen over CSS| hulp aanbieden    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
@@ -144,13 +137,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 - Punt 2: Meer werk nodig met flexbox en display elements.
 </details>
 
-
-
-
-
 ## Toegankelijkheidstest 2/2 (week 4)
 <!-- work on it at home -->
-<details>
+<details open>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
@@ -164,7 +153,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 3 (week 4)
 
-<details>
+<details open>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -174,11 +163,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Ik heb de nav, en de footer beter kunnen uitwerken van de website..
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+  Samen met je groepje opstellen
 
   | Michelle       | Keira              | Mitchell     | Yade             |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | layout bekijken| vragen stellen over JS| CSS vragen| ondersteuning/kritiek aanbieden    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
@@ -189,7 +178,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - Punt 1: Website ziet veel verbetering, er is overduidelijk meer CSS gebruikt.
   - Punt 2: Javascript is nog steeds wat mager, dat komt vast later wel goed.
   - Punt 3: Tweede pagina is er nog niet.
-  - Punt 4: ???
+  - Punt 4: Mist nog JS (queryselector, classlist, eventlistener, etc)
 
 </details>
 
