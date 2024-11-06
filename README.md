@@ -171,7 +171,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Ik ben opnieuw begonnen met het schrijven van mijn website. Op een gegeven moment had ik wel mijn code goed af
   maar ik had geen overzicht meer in mijn code, dus had ik besloten om met een schone lei te beginnen, zodat ik beter overzicht kan behouden.
   Ik heb een groot deel van de eerste pagina al af, maar niet de tweede pagina.
-  Ik heb de nav, en de footer beter kunnen uitwerken van de website.
+  Ik heb de nav, en de footer beter kunnen uitwerken van de website..
 
   ### Agenda voor meeting
   samen met je groepje opstellen
