@@ -590,8 +590,9 @@ footer > section > div {
 	/* USER OF THE DAY END --------- */
 
 	/* COMMUNITY PAGE */
+
 	main > section:nth-of-type(1) > section:nth-of-type(1) > section:nth-of-type(2) > div {
-			padding: 0.5em;
+		padding: 0.5em;
 		p {
 			font-size: 0.8em;
 		}
@@ -607,8 +608,14 @@ footer > section > div {
 		}
 	}
 
-	main > section:nth-of-type(1) > section:nth-of-type(1) > section:nth-of-type(2) > article {
+	main > section:nth-of-type(1) > section:nth-of-type(1) > section:nth-of-type(2) article {
 		padding: 0.5em;
+	}
+
+	main > section:nth-of-type(1) > section:nth-of-type(1) > section:nth-of-type(2) article > input {
+		padding: 0.5em;
+		width: 100%;
+		margin-block: 0.5em;
 	}
 
 
@@ -814,8 +821,6 @@ footer > section > div {
 	}
 	/* ----------------- *
 	/* ARTIST NEWS END*/
-
-	main >
 }
 
 .red {
