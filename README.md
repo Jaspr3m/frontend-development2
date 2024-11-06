@@ -47,6 +47,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details open>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
+ <img src="readme-images\FrontEnd.jpg">
+
   ### Bevindingen
   - Schiphol had ALLES van de WCAG checklist goed; ik kon niks vinden waaruit bleek dat er iets ontbrak vanuit Schiphol's website.
   - Doordat Instagram Threads een hele minimale website is ten opzichte van bijvoorbeeld twitter, kon je snel door de WCAG checklist heen. (thuis checken)
@@ -58,16 +60,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>
   Ik heb mijn breakdown-schets digitaal gemaakt via Figma.
   Ik vond dat een handigere alternatief tot pen en papier; hiermee kon ik al automatisch vormen gebruiken om verder te komen.
+  <br><br>
   </summary>
 
+  <img src="readme-images\breakdown-schets.png">
+
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images\community.png" width="375px" alt="breakdown van de hele pagina">
+  Newgrounds is een meer-dan verouderde website die nog steeds hier en daar wordt bezocht. Het gebruikt elementen zoals Flexbox en Grid, maar alsnog doordat het een old-school vibe en vormgeving heeft, worden er alsnog dingen zoals Spritemaps en Verouderde Gradient Backgrounds gebruikt die  de vibe van vroeger behouden. Dit zie je terug over de gehele website.
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images\dynamisch.png" width="375px" alt="breakdown van een dynamisch deel">
+  In dit deel van de webstie kan je er dynamisch ervoor zorgen dat deze bijvoorbeeld onder elkaar kan komen. Dit zorgt ervoor dat je een mooie responsive layout krijgt voor kleinere schermen.
 
 </details>
 
@@ -80,24 +84,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  <!-- hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code) -->
   Ik kwam niet heel ver met mijn website; het beste dat ik klaar kon krijgen was een nav die niet zoals gevraagd ging resizen
   en een grid waarvan de content alleen Nummers waren binnen de container.
   Naar mijn gevoel zit ik heel ver achter met mijn website.
   Ik heb weinig aan Javascript geschreven; ik heb alleen functies geschreven waarmee je van pagina kan wisselen.
+
+  De tweede pagina is nog niet gemaakt. Ik zit nog vast met het idee van welke website ik überhaupt wil hebben. Daarnaast ben ik alsnog niet ver met JS en CSS. Daar wil ik wel nog vragen over stellen aan andere mensen die dat wel kennen. Voor de rest wil ik door loop van deze opdracht zo .veel mogelijk autonoom dingen kunnen uitvinden i.p.v. vragen stellen.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | Michelle       | Keira              | Mitchell     | Yade             |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  |website bekijken| JS vragen stellen  | CSS vragen stellen | bespreken layout |
+  | /// | /// | /// | /// |
   | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
+
+Afgelegd door Christopher Willems
 
   - Punt 1: CSS code is direct en to the point waar nodig; er wordt meteen uitgelegd wat mijn code doet boven bijna elke regel. Daarmee vooral doorgaan met de comments.
   - Punt 2: Tweede pagina ziet er teveel uit zoals de eerste pagina, dus die moet worden geswitcht.
@@ -106,10 +113,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Het werd aangeraden om alvast de HTML op te schrijven die je ziet van de website.
 
 </details>
-
-
-
-
 
 ## Voortgang 2 (week 3)
 
@@ -120,36 +123,36 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Kleine toepassingen gemaakt. Grid heeft nu dummy content erin om te werkelijke grootte van de items te kunnen laten zien.
   Voor de rest niet heel veel andere dingen.
 
+  Ik heb eindelijk een kleine start kunnen maken aan de tweede website. Dat is de Community tab van Newgrounds. Deze heeft een heel andere layout dan de Games tab; i.p.v een 3 column grid waarvan de items dezelfde groottes hebben heb je een 2 column grid waarvan de columns oneven lengtes zijn ,met spatie tussen de items.
+
+  Ik heb onlangs iets verder kunnen komen in het begrip van HTML, CSS en JS. CSS is meer typwerk maar over het algemeen veel meer simpel dan JS. Wat ik wel heb gemerkt is wanneer ik CSS items aan wil roepen, dat ik een hele lange notatie heb. Daarvoor wil ik uitzoeken hoe ik op een kortere manier items kan aanroepen in mijn CSS code. 
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | Michelle       | Keira              | Mitchell     | Yade             |
   | ---            | ---                | ---          | ---              |
-  | hulp aanbieden| elkaars website bekijken| vragen stellen over CSS| hulp aanbieden    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | hulp aanbieden | elkaars website bekijken| vragen stellen over CSS| hulp aanbieden    |
+  | /// | /// | /// | /// |
   | ...            | ...                | ...          | ...              |
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
-<!-- work on it at home -->
 - Punt 1: Grid laat duidelijker zien hoe alles eruit zou kunnen zien.
 - Punt 2: Meer werk nodig met flexbox en display elements.
+- Punt 3: Tweede website is heel goed op gang gekomen. Mooie variatie in vormgeving. Classlist is heel simpel maar werkt. Slim uitgewerkt met hrefs.
+
 </details>
 
 ## Toegankelijkheidstest 2/2 (week 4)
-<!-- work on it at home -->
 <details open>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  <img src="readme-images\FrontEnd2.jpg">
 
 </details>
-
-
-
-
 
 ## Voortgang 3 (week 4)
 
@@ -157,17 +160,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Ik ben opnieuw begonnen met het schrijven van mijn website. Op een gegeven moment had ik wel mijn code goed af
+  Ik ben opnieuw begonnen met het schrijven van mijn eerste website. Op een gegeven moment had ik wel mijn code goed af
   maar ik had geen overzicht meer in mijn code, dus had ik besloten om met een schone lei te beginnen, zodat ik beter overzicht kan behouden.
   Ik heb een groot deel van de eerste pagina al af, maar niet de tweede pagina.
-  Ik heb de nav, en de footer beter kunnen uitwerken van de website..
+  Ik heb de nav, en de footer beter kunnen uitwerken van de website.
+
+  De tweede website is heel goed op gang gekomen. Voor het merendeel is alles af, en ben ik best blij met de uitkomst. Alleen had ik iets meer functionaliteit erin kunnen proppen. 
 
   ### Agenda voor meeting
   Samen met je groepje opstellen
 
   | Michelle       | Keira              | Mitchell     | Yade             |
   | ---            | ---                | ---          | ---              |
-  | layout bekijken| vragen stellen over JS| CSS vragen| ondersteuning/kritiek aanbieden    |
+  | layout bekijken| vragen stellen over JS| CSS vragen| ondersteuning/kritiek aanbieden|
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
@@ -188,28 +193,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Eindgesprek (week 5)
 
-<details>
+<details open>
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images\games1.png">
+  <img src="readme-images\games2.png">
+  <img src="readme-images\community1.png">
+  <img src="readme-images\community2.png">
 
+  Dit zijn de uiteindelijke website. Geworden. Ik ben heel trots op de uitkomst van de website, merendeels omdat ik niet wist dat ik het kon.
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Wat goed ging is het werken met HTML en raar genoeg JS. JS ging iets sneller simpelweg omdat ik de logica sneller kon snappen.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
-
+  Ook ging het repliceren van elementen vanuit de originele website ook heel goed.
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  CSS was het lastigste om mee te werken in het begin. Daarvan moest je dus alles opzoeken; hiermee kon je niet gelijk weg met logische operatoren etc.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  Bovendien had ik momenten waarvan ik dacht dat ik compleet goed zat, maar de CSS code iets anders zei (vooral met width en padding). Uiteindelijk heb ik het dan dus anders gedaan daardoor.
 </details>
-
-
-
-
 
 ## Bronnenlijst
 

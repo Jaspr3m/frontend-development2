@@ -206,7 +206,7 @@ main > section:nth-of-type(1) {
 /* section:nth-of-type(2) = header of grid */
 
 /* grid outer part (outer) */
-main > section:nth-of-type(1) > article:first-of-type {
+main > section:nth-of-type(1) > div:first-of-type {
 	background: #22252A;
 	border-radius: .3em;
 	width: 60%;
@@ -217,7 +217,7 @@ main > section:nth-of-type(1) > article:first-of-type {
 /* ------------- */
 
 /* main header (Featured Games + Featured Art) */
-main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) {
+main > section:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(1) {
     display: flex;
     justify-content: flex-start;
     border-radius: inherit;
@@ -227,14 +227,14 @@ main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) 
     align-items: center;
 }
 
-main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) > h1 {
+main > section:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(1) > h1 {
 	font-family: 'Pakenham';
 	font-size: 2em;
 }
 /* --------------------------------- */
 
 /* Featured games icon styling */
-main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) > div {
+main > section:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(1) > div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -247,7 +247,7 @@ main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) 
 }	
 
 /* Featured games icon that goes inside of the div */
-main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) > div > img {
+main > section:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(1) > div > img {
 	width: 2em;
 	height: 2em;
 	background-repeat: no-repeat;
@@ -257,7 +257,7 @@ main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) 
 }
 
 /* Game Dev Forum button */
-main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) > button {
+main > section:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(1) > button {
     padding: 0.8em;
 	text-align: center;
     border-radius: 0.4em;
@@ -269,20 +269,20 @@ main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) 
 }
 
 /* Hovering over Game Dev Forum button */
-main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) > button:hover {
+main > section:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(1) > button:hover {
 	background-color: #fda238;
 	color: rgba(0,0,0,0.5);
     font-weight: 700;
 }
 
 /* Featured Games header */
-main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) > h2 {
+main > section:nth-of-type(1) > div:nth-of-type(1) > section:nth-of-type(1) > h2 {
 	flex-grow: 1;
 	text-align: left;
 }
 	
 /* grid inner part */
-main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) {
+main > section:nth-of-type(1) > div:nth-of-type(1) > ul:nth-of-type(1) {
 	display: grid;
 	background-color: #111;
 	grid-template-columns: 1fr 1fr 1fr;
@@ -295,7 +295,7 @@ main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) {
 
 
 /* grid items */
-main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li {
+main > section:nth-of-type(1) > div:nth-of-type(1) > ul:nth-of-type(1) > li {
 	border-radius: 0.4em;
 	text-align: center;
 	background-color: rgba(255, 255, 255, 0.1);
@@ -314,7 +314,7 @@ main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li 
 	}
 }
 
-main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li > button {
+main > section:nth-of-type(1) > div:nth-of-type(1) > ul:nth-of-type(1) > li > button {
 	background: linear-gradient(to bottom, #34393D 0%, #34393D 60%, #4E575E 70%, #4E575E 100%);
 	margin-top: 0.4em;
 	border: 2px solid #34393D;
@@ -328,11 +328,11 @@ main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li 
 /* ------------------------- 
 
 /* maturity indicator */
-main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li > div:nth-of-type(1) {
+main > section:nth-of-type(1) > div:nth-of-type(1) > ul:nth-of-type(1) > li > div:nth-of-type(1) {
 	display: inline;
 }
 
-main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li > div:nth-of-type(1) > img {
+main > section:nth-of-type(1) > div:nth-of-type(1) > ul:nth-of-type(1) > li > div:nth-of-type(1) > img {
 	width: 1.2em;
     height: auto;
     position: absolute;
@@ -340,7 +340,7 @@ main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li 
 /* ----------------------- */
 
 /* clip-path */
-main > section:nth-of-type(1) > article:nth-of-type(1) > ul:nth-of-type(1) > li > img {
+main > section:nth-of-type(1) > div:nth-of-type(1) > ul:nth-of-type(1) > li > img {
 	width: 95%;
 	/* height: 100; */
 	clip-path: polygon(0 28px, 1px 26px, 2px 25px, 4px 24px, 18px 24px, 20px 23px, 21px 22px, 22px 20px, 22px 4px, 23px 2px, 24px 1px, 26px 0px, 100% 0, 100% 100%, 0 100%);
@@ -518,8 +518,6 @@ footer > section > div {
 		display: flex;
 		align-items: center;
 		background-image: linear-gradient(#4D565D, #202427);
-		padding-inline: .3em;
-		padding-block: .2em;
 	}
 
 	main > section:nth-of-type(1) > section:nth-of-type(1) > section > div > img {
@@ -592,9 +590,8 @@ footer > section > div {
 	/* USER OF THE DAY END --------- */
 
 	/* COMMUNITY PAGE */
-
-	main > section:nth-of-type(1) > section:nth-of-type(1) > section:nth-of-type(2) > article {
-		margin: 1em;
+	main > section:nth-of-type(1) > section:nth-of-type(1) > section:nth-of-type(2) > div {
+			padding: 0.5em;
 		p {
 			font-size: 0.8em;
 		}
@@ -608,6 +605,10 @@ footer > section > div {
 			border-radius: 5%;
 			box-sizing: border-box;
 		}
+	}
+
+	main > section:nth-of-type(1) > section:nth-of-type(1) > section:nth-of-type(2) > article {
+		padding: 0.5em;
 	}
 
 
@@ -813,6 +814,8 @@ footer > section > div {
 	}
 	/* ----------------- *
 	/* ARTIST NEWS END*/
+
+	main >
 }
 
 .red {
