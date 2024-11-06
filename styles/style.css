@@ -28,6 +28,7 @@
 	src: url('PAKENHAM-RG.otf')
 }
 
+
 html {
 	color: white;
 	font-family: Arial, Helvetica, sans-serif;
@@ -87,7 +88,6 @@ header > nav:nth-of-type(1) > span:nth-of-type(1) {
 
 /* input field input */
 header > nav:nth-of-type(1) > span:nth-of-type(2) > input {
-    border: none;
     border-radius: 1em;
 	padding-inline: 10em;
 	padding-block: 0.25em;
@@ -225,6 +225,11 @@ main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) 
     background-image: linear-gradient(#4D565D, #202427);
     flex-wrap: wrap;
     align-items: center;
+}
+
+main > section:nth-of-type(1) > article:nth-of-type(1) > section:nth-of-type(1) > h1 {
+	font-family: 'Pakenham';
+	font-size: 2em;
 }
 /* --------------------------------- */
 
@@ -531,7 +536,7 @@ footer > section > div {
 	}
 
 	main > section:nth-of-type(1) > section:nth-of-type(1) > section > div > h1 {
-		font-family: Pakenham;
+		font-family: 'Pakenham';
 		font-size: 2em;
 	}
 
@@ -672,7 +677,17 @@ footer > section > div {
 		font-weight: bold;
 		font-size: 0.7em;
 		border-radius: 0%;
+		transition: 0.2s;
 	}
+
+	main > section:nth-of-type(1) > section:nth-of-type(1) > section:nth-of-type(4) > ul > li > div > button:hover {
+		font-size: 0.9em;
+	}
+
+	main > section:nth-of-type(1) > section:nth-of-type(1) > section:nth-of-type(4) > ul > li > div > button:focus {
+		font-size: 0.9em;
+	}
+	
 
 	main > section:nth-of-type(1) > section:nth-of-type(1) > section:nth-of-type(4) > ul > li > div:nth-of-type(1) {
 		display: flex;
@@ -796,7 +811,11 @@ footer > section > div {
 		color: darkgray;
 		font-weight: normal;
 	}
-	
 	/* ----------------- *
 	/* ARTIST NEWS END*/
+}
+
+.red {
+	transition: 1s;
+	border: solid .4em red;
 }

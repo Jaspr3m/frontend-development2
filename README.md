@@ -7,9 +7,6 @@ Nb. De standaardstructuur en de spartaanse opmaak van de README.md zijn helemaal
 Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard open zetten. Fijn om dat steeds voor de relevante stuk(ken) te doen.
 
 
-
-
-
 ## Jij
 
 <details open>
@@ -22,13 +19,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw 
 
   #### Je focus:
-  Responsive
+  Vormgeving
  
 </details>
-
-
-
-
 
 ## Je website
 
@@ -39,14 +32,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Newgrounds
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Newgrounds Games 
+  Newgrounds Games <br>
   <img src="readme-images\games.png" width="375px" alt="Games section van Newgrounds. Hier zie je alle speelbare games die Newgrounds aan te bieden heeft.">
+  <br>
+  Dit is de Games pagina van Newgrounds. Hier zie je alle speelbare games die Newgrounds aan te bieden heeft.
 
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Newgrounds Community  
+  Newgrounds Community <br>
   <img src="readme-images\games.png" width="375px" alt="community section van Newgrounds. Hier krijg je de laatste betaalde supporters, Newgrounds Live, laatste nieuws van artiesten, mensen die achievements hebben behaald, mensen die werk aanbieden, en Forum posts te zien.">
-
 
 </details>
 
